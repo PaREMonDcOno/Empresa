@@ -13,7 +13,13 @@
     <!--menu de navegação-->
     <header>
         <nav>
-            <div class="logo">BOOL<span>TECH</span></div>
+           
+            <div class="logo">
+                <img src="img/Logo_empresa.png" alt="Logo">
+            </div>
+            
+          
+        
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#empresa">Empresa</a></li>
