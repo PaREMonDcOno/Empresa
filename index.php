@@ -264,7 +264,7 @@
                         Assim conseguimos entender melhor o contexto e te responder com algo realmente útil.
                     </p>
 
-                    <form action="#" method="post">
+                    <form action="formulario.php" method="post">
                         <div class="form-group">
                             <label for="nome">Nome</label>
                             <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
