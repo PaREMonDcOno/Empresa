@@ -62,7 +62,6 @@
                     <h3>Nossa história</h3>
                     <p class="empresa-texto" id="historia">
                         A Bool Technology nasceu da inquietação de jovens desenvolvedores... 
-                        <span class="more-text">[texto completo aqui]</span>
                     </p>
                     <button class="btn-expand" onclick="toggleTexto('historia')">Leia mais</button>
                 </div>

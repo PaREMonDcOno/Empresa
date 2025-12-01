@@ -318,6 +318,24 @@
       margin-top: 0.5rem;
   }
 
+  .btn-expand {
+    padding: 0.4rem 1rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 500;
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      color: #0b1020;
+      box-shadow: 0 12px 30px rgba(88, 28, 135, 0.75);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+
+  .btn-expand:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 40px rgba(88, 28, 135, 0.9);
+  }
   .btn-link button {
       padding: 0.4rem 1rem;
       border-radius: 999px;
@@ -567,16 +585,7 @@
     text-align: justify;
 }
 
-/* Botão de expandir */
-.btn-expand {
-    background: none;
-    color: var(--primary);
-    border: none;
-    font-size: 0.9rem;
-    cursor: pointer;
-    text-decoration: underline;
-    transition: color 0.3s;
-}
+
 
 .btn-expand:hover {
     color: var(--accent);
