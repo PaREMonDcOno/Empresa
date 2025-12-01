@@ -12,12 +12,7 @@
 <body>
     <!--menu de navegação-->
     <header>
-        <nav>
-           
-            <div class="logo">
-                <img src="img/Logo_empresa.png" alt="Logo">
-            </div>
-            
+        <nav>            
           
         
             <ul>
@@ -31,7 +26,7 @@
     </header>
 
     <!--home-->
-    <section id="home">
+    <section id="home class="reveal">
         <div class="container">
             <div class="content">
                 <div class="badge">
@@ -52,14 +47,14 @@
     </section>
 
     <!--Empresa -->
-    <section id="empresa">
+    <section id="empresa" class="reveal">
         <div class="container">
             <h2>Sobre a Bool Technology</h2>
             <p class="section-subtitle">
                 Uma empresa criada para simplificar o acesso à tecnologia e gerar impacto real em pessoas e negócios.
             </p>
 
-            <div class="empresa-grid">
+            <div class="empresa-grid reveal">
                 <!--historia da empresa-->
                 <div class="empresa-bloco">
                     <h3>Nossa história</h3>
@@ -83,7 +78,7 @@
                 </div>
 
                 <!--Missão-->
-                <div class="empresa-bloco">
+                <div class="empresa-bloco reveal">
                     <h3>Nossa missão</h3>
                     <p>
                         Desenvolver soluções tecnológicas inovadoras, acessíveis e seguras, que simplifiquem processos
@@ -93,7 +88,7 @@
                 </div>
 
                 <!--visão-->
-                <div class="empresa-bloco">
+                <div class="empresa-bloco reveal">
                     <h3>Nossa visão</h3>
                     <p>
                         Ser reconhecida como referência em inovação tecnológica no Brasil, criando produtos e serviços
@@ -102,7 +97,7 @@
                 </div>
 
                 <!--Valores-->
-                <div class="empresa-bloco">
+                <div class="empresa-bloco reveal">
                     <h3>Nossos valores</h3>
                     <p>
                         <strong>Inovação contínua:</strong> buscamos sempre novas formas de resolver problemas reais com
