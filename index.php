@@ -46,77 +46,66 @@
         </div>
     </section>
 
-    <!--Empresa -->
-    <section id="empresa" class="reveal">
-        <div class="container">
-            <h2>Sobre a Bool Technology</h2>
-            <p class="section-subtitle">
-                Uma empresa criada para simplificar o acesso à tecnologia e gerar impacto real em pessoas e negócios.
-            </p>
+  <!-- Empresa -->
+<section id="empresa" class="reveal">
+    <div class="container">
+        <h2>Sobre a Bool Technology</h2>
+        <p class="section-subtitle">
+            Uma empresa criada para simplificar o acesso à tecnologia e gerar impacto real em pessoas e negócios.
+        </p>
 
-            <div class="empresa-grid reveal">
-                <!--historia da empresa-->
-                <div class="empresa-bloco">
+        <div class="empresa-grid reveal">
+            <!-- Bloco de História -->
+            <div class="empresa-bloco">
+                <img src="imagem.jpg" alt="História da empresa" class="empresa-image">
+                <div class="empresa-bloco-content">
                     <h3>Nossa história</h3>
-                    <p>
-                        A Bool Technology nasceu da inquietação de jovens desenvolvedores e empreendedores que
-                        compartilhavam a mesma visão: a tecnologia pode e deve ser um agente de transformação real.
-                        Durante anos, eles observaram como pequenas e médias empresas tinham dificuldades em acessar
-                        soluções digitais de qualidade, muitas vezes presas a sistemas caros, complicados ou
-                        ultrapassados.
-                        <br><br>
-                        Movidos pelo desejo de democratizar o acesso à tecnologia, decidiram unir conhecimento técnico,
-                        criatividade e espírito empreendedor para criar soluções simples, acessíveis e eficazes.
-                        Desde o início, o propósito da Bool Technology foi claro: tornar a tecnologia uma aliada, e não
-                        uma barreira, ajudando empresas e pessoas a se adaptarem ao mundo digital de forma prática,
-                        segura e escalável.
-                        <br><br>
-                        Assim, a Bool Technology construiu sua identidade como uma startup ágil e inovadora, comprometida
-                        em oferecer tecnologia que gera valor de verdade, sempre com foco no impacto positivo e na
-                        construção de um futuro mais conectado e eficiente.
+                    <p class="empresa-texto" id="historia">
+                        A Bool Technology nasceu da inquietação de jovens desenvolvedores... 
+                        <span class="more-text">[texto completo aqui]</span>
                     </p>
+                    <button class="btn-expand" onclick="toggleTexto('historia')">Leia mais</button>
                 </div>
+            </div>
 
-                <!--Missão-->
-                <div class="empresa-bloco reveal">
+            <!-- Bloco de Missão -->
+            <div class="empresa-bloco">
+                <img src="img/dev programando.png" alt="Missão da empresa" class="empresa-image">
+                <div class="empresa-bloco-content">
                     <h3>Nossa missão</h3>
-                    <p>
-                        Desenvolver soluções tecnológicas inovadoras, acessíveis e seguras, que simplifiquem processos
-                        e potencializem a transformação digital de pessoas e empresas, promovendo eficiência e impacto
-                        positivo na sociedade.
+                    <p class="empresa-texto" id="missao">
+                        Desenvolver soluções tecnológicas inovadoras, acessíveis e seguras...
                     </p>
+                    <button class="btn-expand" onclick="toggleTexto('missao')">Leia mais</button>
                 </div>
+            </div>
 
-                <!--visão-->
-                <div class="empresa-bloco reveal">
+            <!-- Bloco de Visão -->
+            <div class="empresa-bloco">
+                <img src="imagem.jpg" alt="Visão da empresa" class="empresa-image">
+                <div class="empresa-bloco-content">
                     <h3>Nossa visão</h3>
-                    <p>
-                        Ser reconhecida como referência em inovação tecnológica no Brasil, criando produtos e serviços
-                        que conectem simplicidade, inteligência e valor para usuários e organizações.
+                    <p class="empresa-texto" id="visao">
+                        Ser reconhecida como referência em inovação tecnológica no Brasil...
                     </p>
+                    <button class="btn-expand" onclick="toggleTexto('visao')">Leia mais</button>
                 </div>
+            </div>
 
-                <!--Valores-->
-                <div class="empresa-bloco reveal">
+            <!-- Bloco de Valores -->
+            <div class="empresa-bloco">
+                <img src="imagem.jpg" alt="Valores da empresa" class="empresa-image">
+                <div class="empresa-bloco-content">
                     <h3>Nossos valores</h3>
-                    <p>
-                        <strong>Inovação contínua:</strong> buscamos sempre novas formas de resolver problemas reais com
-                        tecnologia.<br>
-                        <strong>Acessibilidade:</strong> soluções que possam ser usadas por todos, sem barreiras
-                        financeiras ou técnicas.<br>
-                        <strong>Transparência:</strong> relacionamento claro, ético e confiável com clientes, parceiros
-                        e colaboradores.<br>
-                        <strong>Colaboração:</strong> acreditamos que grandes resultados nascem do trabalho em equipe e
-                        de parcerias sólidas.<br>
-                        <strong>Impacto positivo:</strong> desenvolvemos tecnologia que melhora vidas, negócios e
-                        comunidades.<br>
-                        <strong>Agilidade:</strong> rapidez para se adaptar às mudanças e entregar valor
-                        constantemente.
+                    <p class="empresa-texto" id="valores">
+                        <strong>Inovação contínua:</strong> buscamos sempre novas formas de resolver problemas reais...
                     </p>
+                    <button class="btn-expand" onclick="toggleTexto('valores')">Leia mais</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!--portfolios-->
     <section id="portfolios">
@@ -333,6 +322,22 @@
 }
         // Atualiza o ano no rodapé automaticamente
         document.getElementById("year").textContent = new Date().getFullYear();
+
+
+        function toggleTexto(id) {
+        const texto = document.getElementById(id);
+        var btn = texto.querySelector('.btn-expand');
+
+        // Alterna a classe 'expanded'
+        texto.classList.toggle('expanded');
+
+        // Altera o texto do botão conforme a expansão
+        if (texto.classList.contains('expanded')) {
+        btn.textContent = "Leia menos"; // Muda para "Leia menos"
+    } else {
+        btn.textContent = "Leia mais"; // Muda para "Leia mais"
+    }
+}
     </script>
 </body>
 
