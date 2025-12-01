@@ -232,8 +232,8 @@
   }
 
   .empresa-grid {
-         display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste para telas menores */
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Ajuste para telas menores */
     gap: 1.5rem;
   }
 

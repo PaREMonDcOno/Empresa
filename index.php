@@ -57,7 +57,7 @@
         <div class="empresa-grid reveal">
             <!-- Bloco de História -->
             <div class="empresa-bloco">
-                <img src="imagem.jpg" alt="História da empresa" class="empresa-image">
+                <img src="img/nossa historia.png" alt="História da empresa" class="empresa-image">
                 <div class="empresa-bloco-content">
                     <h3>Nossa história</h3>
                     <p class="empresa-texto" id="historia">
@@ -70,7 +70,7 @@
 
             <!-- Bloco de Missão -->
             <div class="empresa-bloco">
-                <img src="img/dev programando.png" alt="Missão da empresa" class="empresa-image">
+                <img src="img/Nossa missão.png" alt="Missão da empresa" class="empresa-image">
                 <div class="empresa-bloco-content">
                     <h3>Nossa missão</h3>
                     <p class="empresa-texto" id="missao">
@@ -82,7 +82,7 @@
 
             <!-- Bloco de Visão -->
             <div class="empresa-bloco">
-                <img src="imagem.jpg" alt="Visão da empresa" class="empresa-image">
+                <img src="img/nossa visao.png" alt="Visão da empresa" class="empresa-image">
                 <div class="empresa-bloco-content">
                     <h3>Nossa visão</h3>
                     <p class="empresa-texto" id="visao">
@@ -94,7 +94,7 @@
 
             <!-- Bloco de Valores -->
             <div class="empresa-bloco">
-                <img src="imagem.jpg" alt="Valores da empresa" class="empresa-image">
+                <img src="img/nossos valores.png" alt="Valores da empresa" class="empresa-image">
                 <div class="empresa-bloco-content">
                     <h3>Nossos valores</h3>
                     <p class="empresa-texto" id="valores">
