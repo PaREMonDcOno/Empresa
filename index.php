@@ -26,7 +26,7 @@
     </header>
 
     <!--home-->
-    <section id="home class="reveal">
+    <section id="home" class="reveal">
         <div class="container">
             <div class="content">
                 <div class="badge">
@@ -215,14 +215,14 @@
 
     <!-- Serviços -->
     <section id="services">
-        <div class="container">
+        <div class="container reveal">
             <h2>Serviços</h2>
             <p class="section-subtitle">
                 Do conceito ao deploy: entregamos soluções completas, com foco em eficiência e resultado.
             </p>
 
-            <div class="services-container">
-                <div class="service-card">
+            <div class="services-container reveal">
+                <div class="service-card reveal">
                     <h3>Desenvolvimento de Sites e Sistemas Web</h3>
                     <p>
                         Criação de sites institucionais, landing pages e sistemas web sob medida, focados em performance,
@@ -230,7 +230,7 @@
                     </p>
                 </div>
 
-                <div class="service-card">
+                <div class="service-card reveal">
                     <h3>Aplicações Personalizadas & Integrações</h3>
                     <p>
                         Desenvolvimento de aplicações customizadas, automações e integrações entre sistemas (APIs,
@@ -238,7 +238,7 @@
                     </p>
                 </div>
 
-                <div class="service-card">
+                <div class="service-card reveal">
                     <h3>Consultoria em Transformação Digital</h3>
                     <p>
                         Análise de processos, diagnóstico tecnológico e definição de soluções digitais que geram
@@ -251,37 +251,37 @@
 
     <!-- Contato -->
     <section id="contato">
-        <div class="container">
+        <div class="container reveal">
             <h2>Contato</h2>
-            <p class="section-subtitle">
+            <p class="section-subtitle reveal">
                 Tem um projeto em mente, precisa de ajuda técnica ou quer trocar ideia sobre tecnologia?
                 Fale com a Bool Technology.
             </p>
 
-            <div class="contato-layout">
+            <div class="contato-layout reveal">
                 <div>
-                    <p class="contato-intro">
+                    <p class="contato-intro reveal">
                         Preencha o formulário ao lado com o máximo de detalhes possível sobre seu projeto ou necessidade.
                         Assim conseguimos entender melhor o contexto e te responder com algo realmente útil.
                     </p>
 
                     <form action="formulario.php" method="post">
-                        <div class="form-group">
+                        <div class="form-group reveal">
                             <label for="nome">Nome</label>
                             <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group reveal">
                             <label for="email">E-mail</label>
                             <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group reveal">
                             <label for="assunto">Assunto</label>
                             <input type="text" id="assunto" name="assunto" placeholder="Sobre o que quer falar?" required>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group reveal">
                             <label for="mensagem">Mensagem</label>
                             <textarea id="mensagem" name="mensagem" rows="5"
                                 placeholder="Descreva seu projeto, ideia ou problema com o máximo de detalhes possível."
@@ -292,7 +292,7 @@
                     </form>
                 </div>
 
-                <div class="contato-info">
+                <div class="contato-info ">
                     <h3>Outros canais</h3>
                     <p><strong>E-mail:</strong> contato@booltechnology.com</p>
                     <p><strong>Telefone/WhatsApp:</strong> (11) 99999-9999</p>
@@ -311,7 +311,27 @@
     </footer>
 
     <script>
-        // Só pra manter o ano do footer sempre atualizado
+        // Chama a função assim que o DOM carrega
+        document.addEventListener("DOMContentLoaded", revealOnScroll);
+    // Chama de novo toda vez que der scroll
+    window.addEventListener("scroll", revealOnScroll);
+
+        function revealOnScroll() {
+        const reveals = document.querySelectorAll(".reveal");
+        const windowHeight = window.innerHeight;
+        const elementVisible = 150; // quanto antes do fim da tela o elemento começa a aparecer
+
+        reveals.forEach((el) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - elementVisible) {
+            el.classList.add("active");
+        } else {
+            el.classList.remove("active");
+        }
+    });
+}
+        // Atualiza o ano no rodapé automaticamente
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 </body>
