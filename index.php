@@ -90,8 +90,7 @@
                         Desenvolver soluções tecnológicas inovadoras, acessíveis e seguras
                     </p>
                     <p class="empresa-texto" id="missao" style="display: none;">
-                        Desenvolver soluções tecnológicas inovadoras, acessíveis e seguras, que simplifiquem 
-                        processos e potencializem a transformação digital de pessoas e empresas, 
+                        processos que potencializem a transformação digital de pessoas e empresas, 
                         promovendo eficiência e impacto positivo na sociedade. 
                     </p>
                     <button class="btn-expand" onclick="toggleTexto('missao')">Leia mais</button>
@@ -108,7 +107,6 @@
                         Ser reconhecida como referência em inovação tecnológica no Brasil
                     </p>
                     <p class="empresa-texto" id="visao" style="display: none;">
-                        Ser reconhecida como referência em inovação tecnológica no Brasil, 
                         destacando-se pela capacidade de transformar ideias em soluções digitais 
                         práticas e eficazes, que impulsionem o crescimento sustentável de nossos clientes 
                         e contribuam para a evolução do ecossistema tecnológico nacional.
@@ -126,12 +124,27 @@
                     <p>
                         <strong>Inovação contínua:</strong> buscamos sempre novas formas de resolver problemas reais
                     </p>
-                    <p class="empresa-texto" id="valores" style="display: none;"><strong>Acessibilidade:</strong>soluções que possam ser usadas por todos, sem barreiras financeiras ou técnicas.</p>
-                    <p class="empresa-texto" id="valores" style="display: none;"><strong>Transparência:</strong> relacionamento claro, ético e confiável com clientes, parceiros e colaboradores.</p>
-                    <p class="empresa-texto" id="valores" style="display: none;"><strong>Colaboração:</strong> acreditamos que grandes resultados nascem do trabalho em equipe e de parcerias sólidas.</p>
-                    <p class="empresa-texto" id="valores" style="display: none;"><strong>Impacto positivo:</strong> desenvolvemos tecnologia que melhora vidas, negócios e comunidades.</p>
-                    <p class="empresa-texto" id="valores" style="display: none;"><strong>Agilidade:</strong> rapidez para se adaptar às mudanças e entregar valor constantemente.</p>                    
-                    <button class="btn-expand" onclick="toggleTexto('valores')">Leia mais</button>
+                    <p class="empresa-texto valores" style="display: none;">
+                        <strong>Acessibilidade:</strong> soluções que possam ser usadas por todos, sem barreiras financeiras ou técnicas.
+                    </p>
+
+                    <p class="empresa-texto valores" style="display: none;">
+                        <strong>Transparência:</strong> relacionamento claro, ético e confiável com clientes, parceiros e colaboradores.
+                    </p>
+
+                    <p class="empresa-texto valores" style="display: none;">
+                        <strong>Colaboração:</strong> acreditamos que grandes resultados nascem do trabalho em equipe e de parcerias sólidas.
+                    </p>
+
+                    <p class="empresa-texto valores" style="display: none;">
+                        <strong>Impacto positivo:</strong> desenvolvemos tecnologia que melhora vidas, negócios e comunidades.
+                    </p>
+
+                    <p class="empresa-texto valores" style="display: none;">
+                        <strong>Agilidade:</strong> rapidez para se adaptar às mudanças e entregar valor constantemente.
+                    </p>
+                    
+                    <button class="btn-expand" onclick="toggleValores('valores')">Leia mais</button>
                 </div>
             </div>
         </div>
@@ -377,9 +390,18 @@
         btn.textContent = "Leia mais"; // Muda o texto do botão
     }
 }
-        
-        
-        
+        // Função para mostrar ou esconder os parágrafos com a classe "valores"
+        function toggleValores() {
+              const valores = document.querySelectorAll('.valores');  // Seleciona todos os elementos com a classe "valores"
+
+    valores.forEach(function(paragraph) {
+        if (paragraph.style.display === "none") {
+            paragraph.style.display = "block";  // Mostra o parágrafo
+        } else {
+            paragraph.style.display = "none";  // Esconde o parágrafo
+        }
+    });
+}
         
         
 
