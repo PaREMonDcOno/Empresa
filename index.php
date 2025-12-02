@@ -60,10 +60,24 @@
                 <img src="img/nossa historia.png" alt="História da empresa" class="empresa-image">
                 <div class="empresa-bloco-content">
                     <h3>Nossa história</h3>
-                    <p class="empresa-texto" id="historia">
-                        A Bool Technology nasceu da inquietação de jovens desenvolvedores... 
+                    <p>
+                        A Bool Technology nasceu da inquietação de jovens desenvolvedores
                     </p>
-                    <button class="btn-expand" onclick="toggleTexto('historia')">Leia mais</button>
+                     <p class="empresa-texto" id="historia" style="display: none;">
+                     que compartilhavam a mesma visão: a tecnologia pode e deve ser um 
+                    agente de transformação real. Durante anos, eles observaram como pequenas e 
+                    médias empresas tinham dificuldades em acessar soluções digitais de qualidade, 
+                    muitas vezes presas a sistemas caros, complicados ou ultrapassados. 
+                    Movidos pelo desejo de democratizar o acesso à tecnologia, decidiram unir 
+                    conhecimento técnico, criatividade e espírito empreendedor para criar soluções 
+                    simples, acessíveis e eficazes. Desde o início, o propósito da Bool Technology foi claro: 
+                    tornar a tecnologia uma aliada, e não uma barreira, ajudando empresas e pessoas a se 
+                    adaptarem ao mundo digital de forma prática, segura e escalável. 
+                    Assim, a Bool Technology construiu sua identidade como uma startup ágil e inovadora, 
+                    comprometida em oferecer tecnologia que gera valor de verdade, sempre com foco no 
+                    impacto positivo e na construção de um futuro mais conectado e eficiente.
+                    </p>
+                     <button class="btn-expand" onclick="toggleTexto('historia')">Leia mais</button>
                 </div>
             </div>
 
@@ -72,10 +86,16 @@
                 <img src="img/Nossa missão.png" alt="Missão da empresa" class="empresa-image">
                 <div class="empresa-bloco-content">
                     <h3>Nossa missão</h3>
-                    <p class="empresa-texto" id="missao">
-                        Desenvolver soluções tecnológicas inovadoras, acessíveis e seguras...
+                    <p>
+                        Desenvolver soluções tecnológicas inovadoras, acessíveis e seguras
+                    </p>
+                    <p class="empresa-texto" id="missao" style="display: none;">
+                        Desenvolver soluções tecnológicas inovadoras, acessíveis e seguras, que simplifiquem 
+                        processos e potencializem a transformação digital de pessoas e empresas, 
+                        promovendo eficiência e impacto positivo na sociedade. 
                     </p>
                     <button class="btn-expand" onclick="toggleTexto('missao')">Leia mais</button>
+                    
                 </div>
             </div>
 
@@ -84,8 +104,15 @@
                 <img src="img/nossa visao.png" alt="Visão da empresa" class="empresa-image">
                 <div class="empresa-bloco-content">
                     <h3>Nossa visão</h3>
-                    <p class="empresa-texto" id="visao">
-                        Ser reconhecida como referência em inovação tecnológica no Brasil...
+                    <p>
+                        Ser reconhecida como referência em inovação tecnológica no Brasil
+                    </p>
+                    <p class="empresa-texto" id="visao" style="display: none;">
+                        Ser reconhecida como referência em inovação tecnológica no Brasil, 
+                        destacando-se pela capacidade de transformar ideias em soluções digitais 
+                        práticas e eficazes, que impulsionem o crescimento sustentável de nossos clientes 
+                        e contribuam para a evolução do ecossistema tecnológico nacional.
+
                     </p>
                     <button class="btn-expand" onclick="toggleTexto('visao')">Leia mais</button>
                 </div>
@@ -96,9 +123,14 @@
                 <img src="img/nossos valores.png" alt="Valores da empresa" class="empresa-image">
                 <div class="empresa-bloco-content">
                     <h3>Nossos valores</h3>
-                    <p class="empresa-texto" id="valores">
-                        <strong>Inovação contínua:</strong> buscamos sempre novas formas de resolver problemas reais...
+                    <p>
+                        <strong>Inovação contínua:</strong> buscamos sempre novas formas de resolver problemas reais
                     </p>
+                    <p class="empresa-texto" id="valores" style="display: none;"><strong>Acessibilidade:</strong>soluções que possam ser usadas por todos, sem barreiras financeiras ou técnicas.</p>
+                    <p class="empresa-texto" id="valores" style="display: none;"><strong>Transparência:</strong> relacionamento claro, ético e confiável com clientes, parceiros e colaboradores.</p>
+                    <p class="empresa-texto" id="valores" style="display: none;"><strong>Colaboração:</strong> acreditamos que grandes resultados nascem do trabalho em equipe e de parcerias sólidas.</p>
+                    <p class="empresa-texto" id="valores" style="display: none;"><strong>Impacto positivo:</strong> desenvolvemos tecnologia que melhora vidas, negócios e comunidades.</p>
+                    <p class="empresa-texto" id="valores" style="display: none;"><strong>Agilidade:</strong> rapidez para se adaptar às mudanças e entregar valor constantemente.</p>                    
                     <button class="btn-expand" onclick="toggleTexto('valores')">Leia mais</button>
                 </div>
             </div>
@@ -321,22 +353,36 @@
 }
         // Atualiza o ano no rodapé automaticamente
         document.getElementById("year").textContent = new Date().getFullYear();
+        
+        // Função para expandir/recolher o texto
+     function toggleTexto(id) {
+    const texto = document.getElementById(id); // O parágrafo com o texto adicional
+    const btn = texto.nextElementSibling; // O botão "Leia mais"/"Leia menos"
 
-
-        function toggleTexto(id) {
-        const texto = document.getElementById(id);
-        var btn = texto.querySelector('.btn-expand');
-
-        // Alterna a classe 'expanded'
-        texto.classList.toggle('expanded');
-
-        // Altera o texto do botão conforme a expansão
-        if (texto.classList.contains('expanded')) {
-        btn.textContent = "Leia menos"; // Muda para "Leia menos"
+        // Alterna a classe 'expanded' para expandir ou contrair o conteúdo
+    texto.classList.toggle('expanded');
+    
+    // Altera o texto do botão conforme o estado de expansão
+    if (texto.classList.contains('expanded')) {
+        btn.textContent = "Leia menos"; // Muda o texto para "Leia menos"
     } else {
-        btn.textContent = "Leia mais"; // Muda para "Leia mais"
+        btn.textContent = "Leia mais"; // Muda o texto para "Leia mais"
+    }
+
+    if (texto.style.display === "none") {
+        texto.style.display = "block";  // Exibe o conteúdo
+        btn.textContent = "Leia menos"; // Muda o texto do botão
+    } else {
+        texto.style.display = "none";  // Oculta o conteúdo
+        btn.textContent = "Leia mais"; // Muda o texto do botão
     }
 }
+        
+        
+        
+        
+        
+
     </script>
 </body>
 

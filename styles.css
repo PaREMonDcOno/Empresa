@@ -593,16 +593,14 @@
 
 /* Expandir o texto */
 .empresa-texto {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    max-height: 100px;
+    overflow: hidden;   
+    max-height: 80px;
     transition: max-height 0.3s ease;
 }
 
 .empresa-texto.expanded {
     white-space: normal;
-    max-height: none;
+    max-height: 1000px;
 }
 /* Container e layout */
 .container {
