@@ -608,9 +608,13 @@
     margin: 0 auto;
     padding: 2rem 1rem;
 }
-canvas {
-     position: fixed;
+  /* O vídeo ocupará toda a tela */
+    video {
+      position: absolute;
       top: 0;
       left: 0;
-      z-index: -1; /* Faz com que o canvas fique atrás de outros conteúdos */
-}
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Faz o vídeo cobrir a tela inteira */
+      z-index: -1; /* Faz o vídeo ficar atrás do conteúdo da página */
+    }

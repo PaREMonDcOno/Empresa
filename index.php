@@ -28,6 +28,9 @@
 
     <!--home-->
     <section id="home" class="reveal">
+        <video autoplay muted loop>
+            <source src="video/25380-350507864_small.mp4" type="video/mp4">
+        </video>
         <div class="container">
             <div class="content">
                 <div class="badge">
