@@ -10,6 +10,7 @@
 </head>
 
 <body>
+        
     <!--menu de navegação-->
     <header>
         <nav>            
@@ -33,6 +34,7 @@
                     <span class="badge-dot"></span>
                     Tecnologia que transforma negócios
                 </div>
+                
                 <h1>Bem-vindo à <span>Bool Technology</span></h1>
                 <p>
                     Lógica, criatividade e tecnologia trabalhando juntas para transformar ideias
