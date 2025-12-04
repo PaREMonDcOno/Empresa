@@ -13,9 +13,9 @@
         
     <!--menu de navegação-->
     <header>
-        <nav>            
-          
         
+        <nav>            
+            <img src="img/Logo empresa (1).png" alt="imagem logo da empresa" class="Logo"> 
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#empresa">Empresa</a></li>
@@ -23,6 +23,8 @@
                 <li><a href="#services">Serviços</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+            
+
         </nav>
     </header>
 
