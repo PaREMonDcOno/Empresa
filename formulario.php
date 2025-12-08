@@ -30,9 +30,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Executando a query
     if ($conn->query($sql) === TRUE) {
-        echo "javascript: alert('Mensagem enviada com sucesso!'); window.location.href = 'index.php'; ";
+        echo "<script>javascript: alert('Mensagem enviada com sucesso!'); window.location.href = 'index.php';</script> ";
     } else {
-        echo "javascript: alert('Erro ao mandar a mensagem ') " . $conn->error;
+        echo "<script>javascript: alert('Erro ao mandar a mensagem '). $conn->error;</script>";
     }
 }
 // Fechar a conexão com o banco

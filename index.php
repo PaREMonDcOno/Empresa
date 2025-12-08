@@ -5,26 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bool Technology</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Fonte opcional do Google (pode remover se quiser) -->
+    <!-- Fonte opcional do Google -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-        
     <!--menu de navegação-->
     <header>
+        <nav>
+            <img src="img/Logo empresa (1).png" alt="imagem logo da empresa" class="Logo">
+    
         
-        <nav>            
-            <img src="img/Logo empresa (1).png" alt="imagem logo da empresa" class="Logo"> 
-            <ul>
+            <ul id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#empresa">Empresa</a></li>
                 <li><a href="#portfolios">Portfólios</a></li>
                 <li><a href="#services">Serviços</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-            
-
         </nav>
     </header>
 
@@ -33,13 +31,14 @@
         <video autoplay muted loop>
             <source src="video/25380-350507864_small.mp4" type="video/mp4">
         </video>
+
         <div class="container">
             <div class="content">
                 <div class="badge">
                     <span class="badge-dot"></span>
                     Tecnologia que transforma negócios
                 </div>
-                
+
                 <h1>Bem-vindo à <span>Bool Technology</span></h1>
                 <p>
                     Lógica, criatividade e tecnologia trabalhando juntas para transformar ideias
@@ -53,112 +52,115 @@
         </div>
     </section>
 
-  <!-- Empresa -->
-<section id="empresa" class="reveal">
-    <div class="container">
-        <h2>Sobre a Bool Technology</h2>
-        <p class="section-subtitle">
-            Uma empresa criada para simplificar o acesso à tecnologia e gerar impacto real em pessoas e negócios.
-        </p>
+    <!-- Empresa -->
+    <section id="empresa" class="reveal">
+        <div class="container">
+            <h2>Sobre a Bool Technology</h2>
+            <p class="section-subtitle">
+                Uma empresa criada para simplificar o acesso à tecnologia e gerar impacto real em pessoas e negócios.
+            </p>
 
-        <div class="empresa-grid reveal">
-            <!-- Bloco de História -->
-            <div class="empresa-bloco">
-                <img src="img/nossa historia.png" alt="História da empresa" class="empresa-image">
-                <div class="empresa-bloco-content">
-                    <h3>Nossa história</h3>
-                    <p>
-                        A Bool Technology nasceu da inquietação de jovens desenvolvedores
-                    </p>
-                     <p class="empresa-texto" id="historia" style="display: none;">
-                     que compartilhavam a mesma visão: a tecnologia pode e deve ser um 
-                    agente de transformação real. Durante anos, eles observaram como pequenas e 
-                    médias empresas tinham dificuldades em acessar soluções digitais de qualidade, 
-                    muitas vezes presas a sistemas caros, complicados ou ultrapassados. 
-                    Movidos pelo desejo de democratizar o acesso à tecnologia, decidiram unir 
-                    conhecimento técnico, criatividade e espírito empreendedor para criar soluções 
-                    simples, acessíveis e eficazes. Desde o início, o propósito da Bool Technology foi claro: 
-                    tornar a tecnologia uma aliada, e não uma barreira, ajudando empresas e pessoas a se 
-                    adaptarem ao mundo digital de forma prática, segura e escalável. 
-                    Assim, a Bool Technology construiu sua identidade como uma startup ágil e inovadora, 
-                    comprometida em oferecer tecnologia que gera valor de verdade, sempre com foco no 
-                    impacto positivo e na construção de um futuro mais conectado e eficiente.
-                    </p>
-                     <button class="btn-expand" onclick="toggleTexto('historia')">Leia mais</button>
+            <div class="empresa-grid reveal">
+                <!-- Bloco de História -->
+                <div class="empresa-bloco">
+                    <img src="img/nossa historia.png" alt="História da empresa" class="empresa-image">
+                    <div class="empresa-bloco-content">
+                        <h3>Nossa história</h3>
+                        <p>
+                            A Bool Technology nasceu da inquietação de jovens desenvolvedores
+                        </p>
+                        <p class="empresa-texto" id="historia" style="display: none;">
+                            que compartilhavam a mesma visão: a tecnologia pode e deve ser um
+                            agente de transformação real. Durante anos, eles observaram como pequenas e
+                            médias empresas tinham dificuldades em acessar soluções digitais de qualidade,
+                            muitas vezes presas a sistemas caros, complicados ou ultrapassados.
+                            Movidos pelo desejo de democratizar o acesso à tecnologia, decidiram unir
+                            conhecimento técnico, criatividade e espírito empreendedor para criar soluções
+                            simples, acessíveis e eficazes. Desde o início, o propósito da Bool Technology foi claro:
+                            tornar a tecnologia uma aliada, e não uma barreira, ajudando empresas e pessoas a se
+                            adaptarem ao mundo digital de forma prática, segura e escalável.
+                            Assim, a Bool Technology construiu sua identidade como uma startup ágil e inovadora,
+                            comprometida em oferecer tecnologia que gera valor de verdade, sempre com foco no
+                            impacto positivo e na construção de um futuro mais conectado e eficiente.
+                        </p>
+                        <button class="btn-expand" onclick="toggleTexto('historia')">Leia mais</button>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Bloco de Missão -->
-            <div class="empresa-bloco">
-                <img src="img/Nossa missão.png" alt="Missão da empresa" class="empresa-image">
-                <div class="empresa-bloco-content">
-                    <h3>Nossa missão</h3>
-                    <p>
-                        Desenvolver soluções tecnológicas inovadoras, acessíveis e seguras
-                    </p>
-                    <p class="empresa-texto" id="missao" style="display: none;">
-                        processos que potencializem a transformação digital de pessoas e empresas, 
-                        promovendo eficiência e impacto positivo na sociedade. 
-                    </p>
-                    <button class="btn-expand" onclick="toggleTexto('missao')">Leia mais</button>
-                    
+                <!-- Bloco de Missão -->
+                <div class="empresa-bloco">
+                    <img src="img/Nossa missão.png" alt="Missão da empresa" class="empresa-image">
+                    <div class="empresa-bloco-content">
+                        <h3>Nossa missão</h3>
+                        <p>
+                            Desenvolver soluções tecnológicas inovadoras, acessíveis e seguras
+                        </p>
+                        <p class="empresa-texto" id="missao" style="display: none;">
+                            processos que potencializem a transformação digital de pessoas e empresas,
+                            promovendo eficiência e impacto positivo na sociedade.
+                        </p>
+                        <button class="btn-expand" onclick="toggleTexto('missao')">Leia mais</button>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Bloco de Visão -->
-            <div class="empresa-bloco">
-                <img src="img/nossa visao.png" alt="Visão da empresa" class="empresa-image">
-                <div class="empresa-bloco-content">
-                    <h3>Nossa visão</h3>
-                    <p>
-                        Ser reconhecida como referência em inovação tecnológica no Brasil
-                    </p>
-                    <p class="empresa-texto" id="visao" style="display: none;">
-                        destacando-se pela capacidade de transformar ideias em soluções digitais 
-                        práticas e eficazes, que impulsionem o crescimento sustentável de nossos clientes 
-                        e contribuam para a evolução do ecossistema tecnológico nacional.
-
-                    </p>
-                    <button class="btn-expand" onclick="toggleTexto('visao')">Leia mais</button>
+                <!-- Bloco de Visão -->
+                <div class="empresa-bloco">
+                    <img src="img/nossa visao.png" alt="Visão da empresa" class="empresa-image">
+                    <div class="empresa-bloco-content">
+                        <h3>Nossa visão</h3>
+                        <p>
+                            Ser reconhecida como referência em inovação tecnológica no Brasil
+                        </p>
+                        <p class="empresa-texto" id="visao" style="display: none;">
+                            destacando-se pela capacidade de transformar ideias em soluções digitais
+                            práticas e eficazes, que impulsionem o crescimento sustentável de nossos clientes
+                            e contribuam para a evolução do ecossistema tecnológico nacional.
+                        </p>
+                        <button class="btn-expand" onclick="toggleTexto('visao')">Leia mais</button>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Bloco de Valores -->
-            <div class="empresa-bloco">
-                <img src="img/nossos valores.png" alt="Valores da empresa" class="empresa-image">
-                <div class="empresa-bloco-content">
-                    <h3>Nossos valores</h3>
-                    <p>
-                        <strong>Inovação contínua:</strong> buscamos sempre novas formas de resolver problemas reais
-                    </p>
-                    <p class="empresa-texto valores" style="display: none;">
-                        <strong>Acessibilidade:</strong> soluções que possam ser usadas por todos, sem barreiras financeiras ou técnicas.
-                    </p>
+                <!-- Bloco de Valores -->
+                <div class="empresa-bloco">
+                    <img src="img/nossos valores.png" alt="Valores da empresa" class="empresa-image">
+                    <div class="empresa-bloco-content">
+                        <h3>Nossos valores</h3>
+                        <p>
+                            <strong>Inovação contínua:</strong> buscamos sempre novas formas de resolver problemas reais
+                        </p>
 
-                    <p class="empresa-texto valores" style="display: none;">
-                        <strong>Transparência:</strong> relacionamento claro, ético e confiável com clientes, parceiros e colaboradores.
-                    </p>
+                        <p class="empresa-texto valores" style="display: none;">
+                            <strong>Acessibilidade:</strong> soluções que possam ser usadas por todos, sem barreiras
+                            financeiras ou técnicas.
+                        </p>
 
-                    <p class="empresa-texto valores" style="display: none;">
-                        <strong>Colaboração:</strong> acreditamos que grandes resultados nascem do trabalho em equipe e de parcerias sólidas.
-                    </p>
+                        <p class="empresa-texto valores" style="display: none;">
+                            <strong>Transparência:</strong> relacionamento claro, ético e confiável com clientes,
+                            parceiros e colaboradores.
+                        </p>
 
-                    <p class="empresa-texto valores" style="display: none;">
-                        <strong>Impacto positivo:</strong> desenvolvemos tecnologia que melhora vidas, negócios e comunidades.
-                    </p>
+                        <p class="empresa-texto valores" style="display: none;">
+                            <strong>Colaboração:</strong> acreditamos que grandes resultados nascem do trabalho em equipe
+                            e de parcerias sólidas.
+                        </p>
 
-                    <p class="empresa-texto valores" style="display: none;">
-                        <strong>Agilidade:</strong> rapidez para se adaptar às mudanças e entregar valor constantemente.
-                    </p>
-                    
-                    <button class="btn-expand" onclick="toggleValores('valores')">Leia mais</button>
+                        <p class="empresa-texto valores" style="display: none;">
+                            <strong>Impacto positivo:</strong> desenvolvemos tecnologia que melhora vidas, negócios e
+                            comunidades.
+                        </p>
+
+                        <p class="empresa-texto valores" style="display: none;">
+                            <strong>Agilidade:</strong> rapidez para se adaptar às mudanças e entregar valor constantemente.
+                        </p>
+
+                        <button class="btn-expand" onclick="toggleValores()">Leia mais</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!--portfolios-->
+    <!-- Portfólios -->
     <section id="portfolios">
         <div class="container">
             <h3 class="section-title">Portfólios</h3>
@@ -167,7 +169,7 @@
             </p>
 
             <div class="portfolios-grid">
-                <!--SITE FORNALHA DOCES E SALGADOS-->
+                <!-- SITE FORNALHA DOCES E SALGADOS -->
                 <div class="portfolios-card">
                     <h3>Fornalha - Doces e Salgados</h3>
                     <p>
@@ -332,7 +334,7 @@
                     </form>
                 </div>
 
-                <div class="contato-info ">
+                <div class="contato-info">
                     <h3>Outros canais</h3>
                     <p><strong>E-mail:</strong> contato@booltechnology.com</p>
                     <p><strong>Telefone/WhatsApp:</strong> (11) 99999-9999</p>
@@ -351,68 +353,59 @@
     </footer>
 
     <script>
-        // Chama a função assim que o DOM carrega
+        // Animação de entrada no scroll (manipulação do DOM via classe .active)
         document.addEventListener("DOMContentLoaded", revealOnScroll);
-    // Chama de novo toda vez que der scroll
-    window.addEventListener("scroll", revealOnScroll);
+        window.addEventListener("scroll", revealOnScroll);
 
         function revealOnScroll() {
-        const reveals = document.querySelectorAll(".reveal");
-        const windowHeight = window.innerHeight;
-        const elementVisible = 150; // quanto antes do fim da tela o elemento começa a aparecer
+            const reveals = document.querySelectorAll(".reveal");
+            const windowHeight = window.innerHeight;
+            const elementVisible = 150;
 
-        reveals.forEach((el) => {
-        const elementTop = el.getBoundingClientRect().top;
+            reveals.forEach((el) => {
+                const elementTop = el.getBoundingClientRect().top;
 
-        if (elementTop < windowHeight - elementVisible) {
-            el.classList.add("active");
-        } else {
-            el.classList.remove("active");
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add("active");
+                } else {
+                    el.classList.remove("active");
+                }
+            });
         }
-    });
-}
+
         // Atualiza o ano no rodapé automaticamente
         document.getElementById("year").textContent = new Date().getFullYear();
-        
-        // Função para expandir/recolher o texto
-     function toggleTexto(id) {
-    const texto = document.getElementById(id); // O parágrafo com o texto adicional
-    const btn = texto.nextElementSibling; // O botão "Leia mais"/"Leia menos"
 
-        // Alterna a classe 'expanded' para expandir ou contrair o conteúdo
-    texto.classList.toggle('expanded');
-    
-    // Altera o texto do botão conforme o estado de expansão
-    if (texto.classList.contains('expanded')) {
-        btn.textContent = "Leia menos"; // Muda o texto para "Leia menos"
-    } else {
-        btn.textContent = "Leia mais"; // Muda o texto para "Leia mais"
-    }
+        // Função para expandir/recolher o texto (história, missão, visão)
+        function toggleTexto(id) {
+            const texto = document.getElementById(id);
+            const btn = texto.nextElementSibling;
 
-    if (texto.style.display === "none") {
-        texto.style.display = "block";  // Exibe o conteúdo
-        btn.textContent = "Leia menos"; // Muda o texto do botão
-    } else {
-        texto.style.display = "none";  // Oculta o conteúdo
-        btn.textContent = "Leia mais"; // Muda o texto do botão
-    }
-}
+            texto.classList.toggle('expanded');
+
+            if (texto.style.display === "none" || texto.style.display === "") {
+                texto.style.display = "block";
+                btn.textContent = "Leia menos";
+            } else {
+                texto.style.display = "none";
+                btn.textContent = "Leia mais";
+            }
+        }
+
         // Função para mostrar ou esconder os parágrafos com a classe "valores"
         function toggleValores() {
-              const valores = document.querySelectorAll('.valores');  // Seleciona todos os elementos com a classe "valores"
+            const valores = document.querySelectorAll('.valores');
 
-    valores.forEach(function(paragraph) {
-        if (paragraph.style.display === "none") {
-            paragraph.style.display = "block";  // Mostra o parágrafo
-        } else {
-            paragraph.style.display = "none";  // Esconde o parágrafo
+            valores.forEach(function (paragraph) {
+                if (paragraph.style.display === "none" || paragraph.style.display === "") {
+                    paragraph.style.display = "block";
+                } else {
+                    paragraph.style.display = "none";
+                }
+            });
         }
-    });
-}
-        
-        
+         
 
     </script>
 </body>
-
 </html>
